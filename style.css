@@ -33,7 +33,13 @@ p {
 
 .row {
   width: 100%;
-  max-width: fit-content;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-me_info {
+  display: flex;
+  justify-content: center;
 }
 
 .text--teal {
@@ -106,7 +112,6 @@ nav {
 .about-me_info--para {
   text-align: center;
   margin: 0 auto;
-  text-wrap: calc(1.3ch);
   margin-bottom: 28px;
   font-size: 22px;
   font-family: 'Times New Roman', Times, serif;
