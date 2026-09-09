@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+* {
+  color: pink;
+  font-family: 'Cedarville Cursive', cursive;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 , span{
+  color: pink;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.row {
+  width: 100%;
+  max-width: fit-content;
+}
+
+.text--teal {
+  color: rgb(42, 233, 214);
+}
+
+.text--pink {
+  color: rgb(222, 4, 157);
+}
+/*Navigation Bar*/
+nav { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ac89bd;
+  padding: 15px;
+}
+
+.nav_link--list {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+.nav_link--anchor {
+  text-decoration: underline;
+  color: rgb(135, 5, 126);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav_link--anchor-primary {
+  background-color: rgb(135, 5, 126);
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: turquoise;
+}
+
+.nav_link--anchor:hover {
+  color: rgb(8, 127, 115);
+  transition: color 0.3s ease;
+}
+
+.personal_logo {
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: cursive;
+  color: aquamarine;
+  margin: 0 12px;
+}
+
+/*About Me Section*/
+
+#about-me {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me_info--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-me_info--para {
+  text-align: center;
+  margin: 0 auto;
+  text-wrap: calc(1.3ch);
+  margin-bottom: 28px;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about-me_picture--mask {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(240, 30, 184, 0.58);
+  margin-bottom: 20px;
+}
+
+.about-me-picture { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+ /*Crop Image*/
+ transform: scale(1.1);
+ margin-left: 10px;
+ padding-top: 5px;
+}
