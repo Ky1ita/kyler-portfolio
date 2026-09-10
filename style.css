@@ -93,12 +93,15 @@ nav {
 
 /*About Me Section*/
 
-#about-me {
+.about-me {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
+.about-me_info {
+  display: flex;
+  flex-direction: column;
+}
 .about-me_info--container {
   display: flex;
   flex-direction: column;
@@ -135,4 +138,31 @@ nav {
  transform: scale(1.1);
  margin-left: 10px;
  padding-top: 5px;
+}
+
+.about-me_link {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(135, 5, 126);
+  padding: 0 10px;
+}
+
+artist-at-work {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-me_img {
+  width: 100%;
+  max-width: 400px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.fa-brands fa-github {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
