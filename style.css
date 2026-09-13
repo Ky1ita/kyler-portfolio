@@ -42,12 +42,25 @@ p {
   justify-content: center;
 }
 
+.container  {
+  padding: 50 px 0;
+}
+
 .text--teal {
   color: rgb(42, 233, 214);
 }
 
 .text--pink {
   color: rgb(222, 4, 157);
+}
+
+section:nth-child(even) {
+  background-color: rgb (222, 4, 157);
+}
+
+.section_title {
+  margin-bottom: 20px;
+  text-align: center;
 }
 /*Navigation Bar*/
 nav { 
@@ -165,4 +178,27 @@ artist-at-work {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+
+/*Technology Stack*/
+
+.language {
+  width: 25%;
+}
+.language_img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.language_img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 16px;
+}
+
+.language_list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
 }
