@@ -21,14 +21,14 @@ h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
   text-align: center;
-  padding: 20px 0;
+  padding: 60px 0;
 }
 
 .i-header-two {
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   text-align: center;
-  padding: 10px 0;
+  padding: 30px 0;
 }
 
 p {
@@ -69,13 +69,14 @@ p {
 }
 
 section:nth-child(even) {
-  background-color: rgb (222, 4, 157);
+  background-color:  rgb(172, 137, 189);
 }
 
 .section_title {
   margin-bottom: 20px;
   text-align: center;
 }
+
 /*Navigation Bar*/
 nav { 
   display: flex;
@@ -118,31 +119,69 @@ nav {
   margin: 0 12px;
 }
 
+.personal_logo2 {
+  font-family: cursive;
+  font-size: 22px;
+}
+
 /*About Me Section*/
 
-.about-me {
+img {
+  display: block;
+  width: 100%;
+}
+
+#about-me {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
 .about-me_info {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
+
 .about-me_info--container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 70px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 70px;
-  max-width: 600px;
-  margin: 0 auto;
   text-align: center;
+}
+
+.artist-at-work {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-me_img {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.artist-at-work {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 50px;
 }
 
 .about-me_info--para {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 28px;
+  padding-top: 35px;
   font-size: 22px;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -152,7 +191,7 @@ nav {
   margin: 0 auto;
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
-  color: #ac89bd;
+  color: rgb(172, 137, 189);
 }
 
 .about-me_picture--mask {
@@ -173,7 +212,7 @@ nav {
   height: 100%;
   object-fit: cover;
 
- /*Crop Image*/
+ /*Crop Image PFP*/
  transform: scale(1.1);
  margin-left: 10px;
  padding-top: 5px;
@@ -186,34 +225,23 @@ nav {
   padding: 0 10px;
 }
 
-artist-at-work {
-  flex: 1;
-  display: flex;
-  align-items: center;
-}
-
-.about-me_img {
-  width: 100%;
-  max-width: 400px;
-  height: 150px;
-  margin-top: 20px;
-}
-
-.fa-brands fa-github {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
 
 /*Technology Stack*/
 
 .language {
   width: 25%;
 }
+
 .language_img {
   width: 100%;
   max-width: 100px;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.language_img:hover{
+  filter: brightness(80%);
+  opacity: 0.86;
+  transform: scale(0.9);
 }
 
 .language_img--wrapper {
