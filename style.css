@@ -70,7 +70,7 @@ p {
 a {
   text-decoration: none;
   position: relative;
-  transition: opacity 300ms ease;
+  
 }
 
 i:hover {
@@ -232,12 +232,23 @@ img {
   0% {
     transform: rotate(0);
   }
-  50% {
+  25% {
     transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(15deg);
   }
   100% {
     transform: rotate(0);
   }
+}
+
+.wave {
+  display: inline-block;
+  animation: animate-wave 3000ms infinite ease-in-out;
 }
 
 .artist-at-work {
@@ -262,7 +273,7 @@ img {
   padding-top: 35px;
   font-size: 22px;
   font-family: 'Times New Roman', Times, serif;
-  animation: fade-up 650ms 400ms backwards;
+  animation: fade-up 650ms 600ms backwards;
 }
 
 .about-me__links {
@@ -286,6 +297,7 @@ img {
   font-size: 16px;
   font-family: 'Times New Roman', Times, serif;
   color: rgb(172, 137, 189);
+  animation: fade-up 650ms 600ms backwards;
 }
 
 .about-me_picture--mask {
@@ -489,7 +501,7 @@ footer {
 }
 
 .footer_img {
- width: 150px;
+ width: 120px;
  height: 120px;
 }
 
@@ -538,6 +550,7 @@ position: relative;
   h1 {
     font-size: 28px;
   }   
+
   .about-me_info--para {
     font-size: 18px;
   }
@@ -553,6 +566,11 @@ position: relative;
   .project__description {
     left: 30px;
     padding-right: 30px;
+  }
+
+  .footer_img {
+    height: 70px;
+    width: 70px;
   }
 }
 
@@ -590,5 +608,10 @@ position: relative;
   .project__description--sub-title {
     text-align: center;
     margin: 12px 0;
+  }
+
+  .footer_img {
+    height: 60px;
+    width: 60px;
   }
 }
