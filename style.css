@@ -450,7 +450,6 @@ img {
   z-index: 3;
   opacity: 0;
   transition: transform 450ms, opacity 300ms;
-  z
 }
 
 
@@ -492,11 +491,6 @@ footer {
 .footer_img {
  width: 150px;
  height: 120px;
-}
-
-.footer__logo--img {
-  width: 70px;
-  height: 70px;
 }
 
 .footer__social--list {
